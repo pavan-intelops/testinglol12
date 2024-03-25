@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: fgsdasdaaf
+  labels:
+    app: fgsdasdaaf
+  name: fgsdasdaaf
+spec:
+  ports:
+  
+    - protocol: TCP
+      port: 23243
+      targetPort: 23243
+   
+   
+  selector:
+    app: fgsdasdaaf
+  type: ClusterIP
